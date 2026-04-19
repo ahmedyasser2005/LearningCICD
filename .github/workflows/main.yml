@@ -13,3 +13,8 @@ jobs:
       - name: Test my first workflow
         run: echo "This is a test message for my first workflow."
         
+      - name: Checkout
+        uses: actions/checkout@v6.0.2
+
+      - name: List repository files
+        run: ls -la
